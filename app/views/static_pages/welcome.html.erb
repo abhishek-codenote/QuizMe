@@ -1,0 +1,18 @@
+ <h1>Welcome to QuizMe!</h1>
+  <p>
+   QuizMe is a free quizlet style quizzing application that helps you learn by taking quizzes and trying to improve your scores the app is developed with the help of <%= link_to "CodeNote","https://in.linkedin.com/company/codenote-it", target: "_blank" %>
+ </p>
+<%= image_tag "quiz-bubble.png" , height: 300 %>
+<h2>Features Of QuizMe</h2>
+<p>
+  QuizMe allows users to:
+</p>
+<ul>
+  <% features.each do |f| %>
+    <li><%= f %></li>
+  <% end%>
+</ul>
+<p>
+  QuizMe also supports a variety of question styles like multiple choice and fill in the blank.
+</p>
+<p><%=link_to "About",about_path %>  <%= link_to "Contact Us",contact_path %></p>
